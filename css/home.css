@@ -102,8 +102,13 @@ section{
     font-size: 0.9rem;
     color: white;
     font-weight: 500;
+    /* box-shadow: 5px 5px 3px 1px #c6b6b6; */
+    border-left: solid 5px black;
 }
 
+.misc-links .link:hover{
+	box-shadow: 5px 5px 3px 1px #c6b6b6;
+}
 
 
 .misc-links .links-row::after{
