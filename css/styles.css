@@ -1,0 +1,152 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	width: 1310px;
+	min-width: 1300px;
+	display: block;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+
+.head-link{
+	text-align: right;
+	background-color: #224e90;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding: 4px;
+	font-size: 0.8rem;
+}
+.head-link a{
+	color: white;
+}
+
+.banner{
+	background-color: #263859;
+	padding: 8px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+.banner img{
+	margin-left: 40px;
+}
+
+.banner-title{
+	margin-left: 40px;
+	font-size: 1.5rem;
+}
+
+.banner-info{
+	width: 300px;
+	margin-left: 290px;
+}
+
+.banner > div{
+	float: left;
+}
+
+
+/* css for nav bar starts*/
+nav{
+	background-color: #224e90;
+    clear: both;
+    content: "";
+    width: 100%;
+    display: table;
+    font-family: sans-serif;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #224e90;
+}
+nav li{
+	float: left;
+	display: block;
+
+}
+nav a{
+	display: block;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	padding: 10px 24px;
+	text-align: left;
+}
+nav li:hover{
+	background-color: black;
+}
+nav .active{
+	background-color: red;
+}
+nav ul li ul{
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	/*-webkit-animation: mymove 5s infinite;
+	animation: mymove 5s infinite;*/
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.4s ease;
+
+	
+
+}
+nav ul li ul li{
+	float: none;
+	display: block;
+	/*width: 200px;*/
+	height: 30px;
+	border-top: 1px solid white;
+	font-size: 0.9rem;
+}
+nav ul li ul li a{
+	padding: 7px 24px;
+}
+nav ul li:hover ul{
+	visibility: visible;
+	transform: scaleY(1);
+	/*transition: transform 0.4s ease;*/
+	/*transform-origin: top;*/
+}*/
+
+/*css for nav bar ends*/
+
+
+
+
+/*grid view starts*/
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+}
+
+.row::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*grid view ends*/
+
+
