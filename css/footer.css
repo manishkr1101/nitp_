@@ -46,4 +46,52 @@ footer a:hover{
 	text-decoration: underline;
 }
 
+.soc-med-links{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.soc-med-links img{
+	height: 40px;
+	margin: 0 8px;
+	border: solid 1px #ffffff00;
+    border-radius: 50%;
+}
+
+.soc-med-links img:hover{
+	box-shadow: 0 0 3px 3px #260f0f;
+    
+}
+
+.soc-med-links + hr{
+	border: none;
+	height: 1px;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.copyright{
+	text-align: center;
+}
+
+.copyright p{
+	font-size: 1.3rem;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
