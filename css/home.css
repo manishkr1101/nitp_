@@ -1,5 +1,6 @@
 section{
 	background-color: #c1f6e7;
+	overflow-y: hidden;
 }
 
 .clearfix{
@@ -8,19 +9,20 @@ section{
 	display: table;
 }
 
-.links-row:hover{
+.imp-links .links-row:hover{
 	text-decoration: underline;
 }
 
-.links-row span, .links-row a{
+.imp-links .links-row span, .imp-links .links-row a{
 	color: #0072BC;
 	text-decoration: none;
-	
+	font-weight: bold;
 }
 
 .imp-links{
 	text-align: center;
 	padding: : 8px;
+	margin: 8px;
 }
 
 .slideshow{
@@ -43,7 +45,7 @@ section{
 	padding-right: 50px;
 }
 
-.events h1{
+.events h1, .announcements h1{
 	border-left: 3px solid blue;
 	padding-left: 20px;
     font-size: 2rem;
@@ -73,3 +75,39 @@ section{
 	color: black;
 }
 
+
+.announcements{
+	padding-left: 75px;
+	padding-right: 40px;
+}
+
+
+.misc-links{
+	padding-left: 40px;
+	padding-right: 50px;
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+
+.misc-links .link{
+	display: block;
+	background-color: #224e90;
+	display: block;
+	float: left;
+	width: 45%;
+	margin: 4px 6px;
+    padding: 7px 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+.misc-links .links-row::after{
+	content: "";
+	clear: both;
+	display: table;
+}

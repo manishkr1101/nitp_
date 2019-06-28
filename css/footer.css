@@ -1,0 +1,49 @@
+
+
+footer{
+	background-color: #263859;
+	width: 100%;
+	margin: 0;
+	padding: 8px 0;
+	overflow-y: hidden;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+footer > div {
+	float: left;
+	margin-left: 80px;
+	min-width: 220px;
+	text-transform: capitalize;
+}
+
+footer h2{
+	margin: 2px 0;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+footer hr{
+	border-style: solid;
+	border-width: 1px 0 0 0;
+	margin: 1px 0 1rem;
+	
+}
+
+footer p{
+	font-weight: 400;
+	margin: 0.3rem 0;
+	font-size: 0.9rem;
+	color: lightgray;
+}
+
+footer a{
+	color: lightgray;
+}
+
+footer a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+
