@@ -34,7 +34,7 @@ section{
 }
 
 .slideshow img{
-	max-width: 80%;
+	width: 80%;
 	height: 300px;
 	box-shadow: 0 0 20px 5px #ab3d3da1;
 }
@@ -68,6 +68,11 @@ section{
 	.events{
 		padding: 20px;
 	}
+	.slideshow img{
+		width: 100%;
+		height: auto;
+
+	}
 }
 
 .evt-lists .content{
@@ -95,6 +100,13 @@ section{
 	padding-right: 50px;
 	text-transform: capitalize;
 	margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px){
+	.misc-links{
+		padding: 15px;
+		padding-right: 0;
+	}
 }
 
 .misc-links .link{

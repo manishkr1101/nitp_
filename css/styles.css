@@ -9,8 +9,8 @@ body{
 	width: 100%;
 	/*min-width: 1300px;*/
 	display: block;
-	/*margin: 0 auto;*/
-	padding: 0 5px;
+	margin: 0;
+	padding: 0;
 }
 
 @media only screen and (min-width: 1310px){
@@ -37,8 +37,15 @@ body{
 	padding: 8px;
 	color: white;
 	font-family: 'Raleway', sans-serif;
-	overflow: scroll;
 }
+
+@media only screen and (max-width: 768px){
+	/*for mobile*/
+	.banner{
+		overflow: scroll;
+	}
+}
+
 .banner img{
 	margin-left: 40px;
 }
