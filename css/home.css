@@ -64,6 +64,7 @@ section{
 	/*for mobile*/
 	.evt-lists{
 		margin-right: 5px;
+		padding-right: 0;
 	}
 	.events{
 		padding: 20px;
