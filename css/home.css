@@ -34,7 +34,7 @@ section{
 }
 
 .slideshow img{
-	width: 80%;
+	max-width: 80%;
 	height: 300px;
 	box-shadow: 0 0 20px 5px #ab3d3da1;
 }
@@ -58,10 +58,18 @@ section{
 	overflow-y: scroll;
 	margin-right: 60px;
 	padding-right: 20px;
-	li{
-		margin: 8px 0;
+	
+}
+@media only screen and (max-width: 768px){
+	/*for mobile*/
+	.evt-lists{
+		margin-right: 5px;
+	}
+	.events{
+		padding: 20px;
 	}
 }
+
 .evt-lists .content{
 	margin: 5px 0;
 	color: grey;
@@ -103,7 +111,7 @@ section{
     color: white;
     font-weight: 500;
     /* box-shadow: 5px 5px 3px 1px #c6b6b6; */
-    border-left: solid 5px black;
+    border-left: solid 5px #263859;
 }
 
 .misc-links .link:hover{

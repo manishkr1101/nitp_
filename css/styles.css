@@ -6,11 +6,18 @@ a{
 	color: black;
 }
 body{
-	width: 1310px;
-	min-width: 1300px;
+	width: 100%;
+	/*min-width: 1300px;*/
 	display: block;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	padding: 0 5px;
+}
+
+@media only screen and (min-width: 1310px){
+	body{
+		width: 1310px;
+		margin: auto;
+	}
 }
 
 .head-link{
@@ -30,6 +37,7 @@ body{
 	padding: 8px;
 	color: white;
 	font-family: 'Raleway', sans-serif;
+	overflow: scroll;
 }
 .banner img{
 	margin-left: 40px;
@@ -102,7 +110,7 @@ nav ul li ul li{
 	float: none;
 	display: block;
 	/*width: 200px;*/
-	height: 30px;
+	/*height: 30px; commenting this makes possible diff height for items in menu dropdown*/ 
 	border-top: 1px solid white;
 	font-size: 0.9rem;
 }
@@ -147,7 +155,12 @@ nav ul li:hover ul{
 	display: table;
 }
 
-
+@media only screen and (max-width: 1000px){
+	/*for mobile*/
+	[class*="col-"]{
+		width: 100%;
+	}
+}
 
 /*grid view ends*/
 
