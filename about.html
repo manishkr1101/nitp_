@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="row head-link">
@@ -37,13 +39,13 @@ under MHRD, Government of India</p>
 					<li><a href="#">RTI</a></li>
 				</ul>
 			</li>
-			<li  class="active"><a href="#">About Us</a>
+			<li  class="active"><a href="about.html?pp=about-us">About Us</a>
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Vision</a></li>
-					<li><a href="#">Mission</a></li>
-					<li><a href="#">Values</a></li>
-					<li><a href="#">Campus</a></li>
+					<li><a href="about.html?pp=about-us">About</a></li>
+					<li><a href="about.html?pp=vision">Vision</a></li>
+					<li><a href="about.html?pp=mission">Mission</a></li>
+					<li><a href="about.html?pp=values">Values</a></li>
+					<li><a href="about.html?pp=campus">Campus</a></li>
 				</ul>
 			</li>
 			<li><a href="#">administration</a>
@@ -133,6 +135,25 @@ under MHRD, Government of India</p>
 		</ul>
 	</nav>
 
+	<div class="row container">
+		<div class="col-3 menu">
+			<!-- <div class="expnd-btn">
+				
+			</div> -->
+			<ul>
+				<li id="about-us">about us</li>
+				<li id="vision">vision</li>
+				<li id="mission">mission</li>
+				<li id="values">values</li>
+				<li id="campus">campus</li>
+			</ul>
+		</div>
+		<div class="col-9 content">
+			<h1></h1>
+			<iframe name="if" src="iframe/about/about-us.html"></iframe>
+		</div>
+	</div>
+
 	<footer>
 		<div class="contact">
 			<h2>Contact</h2>
@@ -188,6 +209,7 @@ under MHRD, Government of India</p>
 		<p>National Institute of Technology, Patna-800005, Bihar, INDIA</p>
 		<p>&copy; 2019 NIT Patna</p>
 	</footer>
+	<script type="text/javascript" src="scripts/about.js"></script>
 
 </body>
 </html>

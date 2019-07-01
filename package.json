@@ -1,0 +1,23 @@
+{
+  "name": "nitp",
+  "version": "1.0.0",
+  "description": "nitp page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishkr1101/nitp.git"
+  },
+  "author": "manish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishkr1101/nitp/issues"
+  },
+  "homepage": "https://github.com/manishkr1101/nitp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
