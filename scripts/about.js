@@ -18,3 +18,7 @@ $('.menu li').click(function(event){
 	press(this.getAttribute('id'));
 });
 
+$('.menu .expnd-btn img').click(function(){
+	$('.menu ul').slideToggle();
+});
+

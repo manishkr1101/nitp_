@@ -1,5 +1,29 @@
+
+.menu .expnd-btn img{
+	float: left;
+	height: 30px;
+	
+}
+
+.menu .expnd-btn p{
+	padding: 5px;
+    margin-left: 30px;
+}
+
+.menu .expnd-btn::after{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.menu .expnd-btn{
+	visibility: hidden;
+    margin: auto;
+    width: 80px;
+}
 .menu{
 	background-color: lightblue;
+	font-family: 'Raleway', helvetica, sans-serif;
 }
 .menu ul{
 	list-style-type: none;
@@ -17,7 +41,7 @@
 	margin: 30px 0;
 	color: white;
 	box-shadow: 10px 10px 5px 0 black;
-	font-family: 'Raleway', helvetica, sans-serif;
+	
 	/*add font space */
 }
 
@@ -34,8 +58,23 @@
 	font-weight: 700;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 641px){
+	/*for mobile*/
+	.menu .expnd-btn{
+		visibility: visible;
+	}
+	.menu ul{
+		padding: 0;
+		display: none;
+	}
+	.menu li{
+		margin: 1px 0;
+		box-shadow: none;
+	}
 	
+
+
+
 }
 
 .content{
