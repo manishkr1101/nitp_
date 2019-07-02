@@ -13,7 +13,7 @@ body{
 	padding: 0;
 }
 
-@media only screen and (min-width: 975px){
+@media only screen and (min-width: 641px){
 	body{
 		width: 1310px;
 		margin: auto;
@@ -162,7 +162,7 @@ nav ul li:hover ul{
 	display: table;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 641px){
 	/*for mobile*/
 	[class*="col-"]{
 		width: 100%;
