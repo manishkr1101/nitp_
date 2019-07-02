@@ -6,8 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -33,7 +34,7 @@ under MHRD, Government of India</p>
 
 	<nav class="row nav-bar">
 		<ul>
-			<li  class="active"><a href="#">Home</a>
+			<li><a href="index.html">Home</a>
 				<ul>
 					<li><a href="#">PAN Card</a></li>
 					<li><a href="#">GST Certificate</a></li>
@@ -49,7 +50,7 @@ under MHRD, Government of India</p>
 					<li><a href="about.html?pp=campus">Campus</a></li>
 				</ul>
 			</li>
-			<li><a href="admin.html?pp=director">administration</a>
+			<li class="active"><a href="admin.html?pp=director">administration</a>
 				<ul>
 					<li><a href="admin.html?pp=director">Director</a></li>
 					<li><a href="admin.html?pp=admin_">Administration</a></li>
@@ -138,7 +139,35 @@ under MHRD, Government of India</p>
 
 
 	<section>
+		<div class="row container">
+		<div class="col-2 menu">
+			<div class="expnd-btn">
+				<img loading="lazy" src="images/menu.png">
+				<p>Menu</p>
+			</div>
+			<ul>
+				<li id="director">director</li>
+				<li id="admin_">administration</li>
+				<li id="deans">deans</li>
+				<li id="bog">board of governors</li>
+				<li id="bwc">BWC</li>
+				<li id="idc">IDC</li>
+				<li id="fin-com">finance committee</li>
+				<li id="senate">senate</li>
+				<li id="service-units">service units</li>
+				
+				
+			</ul>
+		</div>
 		
+		<div class="col-10 content">
+			<h1></h1>
+			<div>
+				<iframe id="if" onload="changeHeight(this)"></iframe>
+			</div>
+			
+		</div>
+	</div>
 	</section>
 
 
@@ -187,9 +216,9 @@ under MHRD, Government of India</p>
 	</footer>
 
 	<footer class="soc-med-links">
-		<a href="http://www.facebook.com/nitpatnaofficial"><img class="fb" src="images/fb.png"></a>
-		<a href="https://plus.google.com/communities/101561880444961186830"><img class="fb" src="images/gplus.png"></a>
-		<a href="#"><img class="fb" src="images/twitter.png"></a>
+		<a href="http://www.facebook.com/nitpatnaofficial"><img loading="lazy" class="fb" src="images/fb.png"></a>
+		<a href="https://plus.google.com/communities/101561880444961186830"><img loading="lazy" class="fb" src="images/gplus.png"></a>
+		<a href="#"><img loading="lazy" class="fb" src="images/twitter.png"></a>
 	</footer>
 
 	<hr>
@@ -198,6 +227,8 @@ under MHRD, Government of India</p>
 		<p>National Institute of Technology, Patna-800005, Bihar, INDIA</p>
 		<p>&copy; 2019 NIT Patna</p>
 	</footer>
+	<script type="text/javascript" src="scripts/admin.js"></script>
+	<script type="text/javascript" src="scripts/menu.js"></script>
 
 </body>
 </html>

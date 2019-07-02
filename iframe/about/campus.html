@@ -1,1 +1,60 @@
-camupus
+<!DOCTYPE html>
+<html>
+<head>
+	<title>campus</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: 'Roboto', sans-serif;
+			text-align: justify;
+		}
+		.container::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+		.info, .map{
+			float: left;
+		}
+		.info{
+			width: 100%;
+		}
+		.map{
+				width: 100%;
+		}
+		iframe{
+			width: 100%;
+			height: 420px;
+		}
+
+		@media only screen and (min-device-width: 641px){
+			/*for desktop*/
+			.info{
+				width: 60%;
+			}
+			.map{
+				width: 40%;
+				padding-left: 10%;
+				
+			}
+			iframe{
+				height: 310px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="info">
+			<p>
+				NIT Patna is situated on the South bank of river Ganges behind Gandhi Ghat, one of the most important and sacred places of Patna . The Institute campus is 8 Km from the Patna junction railway station and 20 Km from the Jai Prakash Narayan International Airport, Patna . The entrance to the institute is from Ashok Rajpath and it is about 3Km from the famous Gandhi Maidan. The Institute is residential in nature and provides residential facilities to its students as well as teachers as per availability. Its 60 acres campus has a picturesque river view with eyecatching historic buildings presenting a spectacle of architectural and natural beauty.
+			</p>
+		</div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1538.7866509593368!2d85.17148240000004!3d25.6205723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58dce1098af7%3A0xd3ab2e3afc171805!2sNational+Institute+of+Technology+Patna!5e1!3m2!1sen!2s!4v1402950851850" frameborder="0"></iframe>
+		</div>
+	</div>
+</body>
+</html>

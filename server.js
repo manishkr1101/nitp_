@@ -28,6 +28,11 @@ app.get('/about', function(req, res){
 	
 });
 
+app.get('/admin.html', function(req, res){
+	res.sendFile(__dirname + "/admin.html");
+	
+});
+
 app.get('/index.html', function(req, res){
 	res.sendFile(__dirname + "/index.html");
 });
