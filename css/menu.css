@@ -1,4 +1,12 @@
 
+/*
+** contains css for main body of page having menu in left side and an iframe to show 
+** the content
+** menu - class for container having menu list
+** expnd-btn - class for img which you want to be menu butyl ton
+** content - class having iframe inside it
+*/
+
 .menu .expnd-btn img{
 	float: left;
 	height: 30px;

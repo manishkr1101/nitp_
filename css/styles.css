@@ -1,3 +1,7 @@
+/*
+** css for header and grid view
+*/
+
 *{
 	box-sizing: border-box;
 }
@@ -5,6 +9,7 @@ a{
 	text-decoration: none;
 	color: black;
 }
+
 body{
 	width: 100%;
 	/*min-width: 1300px;*/
@@ -64,74 +69,85 @@ body{
 	float: left;
 }
 
+/*for mobile navbar*/
 
-/* css for nav bar starts*/
-nav{
-	background-color: #224e90;
-    clear: both;
-    content: "";
-    width: 100%;
-    display: table;
-    font-family: sans-serif;
+/*end mobile navbar */
+
+@media only screen and (min-width: 641px){
+	/*for desktop*/
+	/* css for nav bar starts*/
+	.mob.header{
+		display: none;
+	}
+	nav{
+		background-color: #224e90;
+	    /*clear: both;
+	    content: "";*/
+	    width: 100%;
+	    /*display: table;*/
+	    font-family: sans-serif;
+	    z-index: 10;
+	}
+
+	nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		background-color: #224e90;
+	}
+	nav li{
+		float: left;
+		display: block;
+
+	}
+	nav a{
+		display: block;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: white;
+		padding: 10px 24px;
+		text-align: left;
+	}
+	nav li:hover{
+		background-color: black;
+	}
+	nav .active{
+		background-color: red;
+	}
+	nav ul li ul{
+		visibility: hidden;
+		position: absolute;
+		z-index: 1;
+		/*-webkit-animation: mymove 5s infinite;
+		animation: mymove 5s infinite;*/
+		transform: scaleY(0);
+		transform-origin: top;
+		transition: transform 0.4s ease;
+
+		
+
+	}
+	nav ul li ul li{
+		float: none;
+		display: block;
+		/*width: 200px;*/
+		/*height: 30px; commenting this makes possible diff height for items in menu dropdown*/ 
+		border-top: 1px solid white;
+		font-size: 0.9rem;
+	}
+	nav ul li ul li a{
+		padding: 7px 24px;
+	}
+	nav ul li:hover ul{
+		visibility: visible;
+		transform: scaleY(1);
+		/*transition: transform 0.4s ease;*/
+		/*transform-origin: top;*/
+	}*/
+
+	/*css for nav bar ends*/
 }
 
-nav ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	background-color: #224e90;
-}
-nav li{
-	float: left;
-	display: block;
-
-}
-nav a{
-	display: block;
-	text-decoration: none;
-	text-transform: capitalize;
-	color: white;
-	padding: 10px 24px;
-	text-align: left;
-}
-nav li:hover{
-	background-color: black;
-}
-nav .active{
-	background-color: red;
-}
-nav ul li ul{
-	visibility: hidden;
-	position: absolute;
-	z-index: 1;
-	/*-webkit-animation: mymove 5s infinite;
-	animation: mymove 5s infinite;*/
-	transform: scaleY(0);
-	transform-origin: top;
-	transition: transform 0.4s ease;
-
-	
-
-}
-nav ul li ul li{
-	float: none;
-	display: block;
-	/*width: 200px;*/
-	/*height: 30px; commenting this makes possible diff height for items in menu dropdown*/ 
-	border-top: 1px solid white;
-	font-size: 0.9rem;
-}
-nav ul li ul li a{
-	padding: 7px 24px;
-}
-nav ul li:hover ul{
-	visibility: visible;
-	transform: scaleY(1);
-	/*transition: transform 0.4s ease;*/
-	/*transform-origin: top;*/
-}*/
-
-/*css for nav bar ends*/
 
 
 

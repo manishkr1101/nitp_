@@ -22,3 +22,24 @@ function changeHeight(iframe){
 	iframe.height = 0;//it seems like foolish but very necessary
 	iframe.height = iframe.contentWindow.document.body.scrollHeight + 30;
 }
+
+// controlling navigation bar
+$('.mob.header .menu-img').click(function(){
+	var mleft = $('nav').css('margin-left');
+	console.log(typeof mleft);
+	if(mleft.charAt(0) == '-'){
+		mleft=0;
+	}
+	else{
+		mleft="-75%";
+	}
+	console.log(mleft);
+	$('nav').animate({"margin-left": mleft});
+});
+
+$('nav').ready(function(){
+	$('nav > ul > li').click(function(event){
+		// console.log(event);
+		$(event.currentTarget).toggleClass('expanded');
+	});
+});
