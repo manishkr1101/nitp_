@@ -23,7 +23,7 @@ function changeHeight(iframe){
 	iframe.height = iframe.contentWindow.document.body.scrollHeight + 30;
 }
 
-// controlling navigation bar
+// controlling navigation bar for mobile
 $('.mob.header .menu-img').click(function(){
 	var mleft = $('nav').css('margin-left');
 	console.log(typeof mleft);

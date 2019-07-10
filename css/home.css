@@ -135,6 +135,9 @@ section{
 	box-shadow: 5px 5px 3px 1px #c6b6b6;
 }
 
+.misc-links .links-row{
+	display: flex;
+}
 
 .misc-links .links-row::after{
 	content: "";
