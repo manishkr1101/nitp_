@@ -48,7 +48,31 @@ body{
 @media only screen and (max-width: 768px){
 	/*for mobile*/
 	.banner{
-		overflow: scroll;
+		position: relative;
+		height: 170px;
+	}
+	.banner > div{
+		position: absolute;
+	}
+	.banner .nitp-logo{
+		width: 20%;
+	}
+	.banner .banner-title{
+		top: 60px;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+		margin: 0!important;
+		letter-spacing: 0.1rem;
+		text-align: center;
+	}
+	.banner .banner-info{
+		width: 80%;
+		right: 0;
+		padding-left: 15px;
+	}
+	.banner img{
+		margin-left: 0!important;
 	}
 }
 
@@ -97,7 +121,7 @@ body{
 	
 	padding: 8px 4px;
     width: 100%;
-    background-color: #000000;
+    background-color: #224e90;
     /* opacity: 0.9; */
     color: white;
     height: 50px;
@@ -106,6 +130,14 @@ body{
 	content: "";
 	clear: both;
 	display: table;
+}
+.mob.header i{
+	    font-size: 25px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 50%; */
+    padding: 6px;
+    color: gainsboro;
 }
 
 .active-menu{
