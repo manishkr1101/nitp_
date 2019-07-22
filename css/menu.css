@@ -29,6 +29,8 @@
     margin: auto;
     width: 80px;
 }
+
+
 .menu{
 	background-color: lightblue;
 	font-family: 'Raleway', helvetica, sans-serif;
@@ -70,8 +72,8 @@
 
 @media only screen and (max-width: 641px){
 	/*for mobile*/
-	.menu .expnd-btn{
-		visibility: visible;
+	.menu{
+		display: none;
 	}
 	.menu ul{
 		padding: 0;
